@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #b0f 100%);
+  animation: gradient 8s ease infinite;
+  background-size: 200% 200%;
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+main {
+  background: white;
+  padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+}
+
+.screen1,
+.screen2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen1 h1,
+.screen2 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  width: 25.8rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+
+.screen1 p {
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.screen1 img {
+  width: 30rem;
+  padding-bottom: 1.6rem;
+  cursor: pointer;
+}
+
+.texto-bilhete {
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  background-color: #e4edf1;
+  width: 29.3rem;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  margin-bottom: 6rem;
+  margin-top: 0.5rem;
+  transform: translateY(20rem);
+}
+
+.texto-bilhete.active {
+  transition: all 10s ease-in-out ;
+  animation: growFromBottom 1s ease forwards;
+}
+
+@keyframes growFromBottom {
+  from {
+      bottom: 0rem;
+  }
+  to {
+      bottom: 19rem;
+  }
+}
+
+.texto-bilhete p {
+  padding: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+form button {
+  padding: 1.6rem;
+  text-align: center;
+  border-radius: 4px;
+  background: #ff9500;
+  border: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+.tremor-image {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s ease;
+}
+
+@keyframes tremor {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, -2px); }
+  40% { transform: translate(2px, 2px); }
+  60% { transform: translate(-2px, -2px); }
+  80% { transform: translate(2px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+.tremor-image:hover {
+  animation: tremor 0.5s infinite;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 48%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  :root {
+    font-size: 40%;
+  }
+}
