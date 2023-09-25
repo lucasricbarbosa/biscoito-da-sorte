@@ -1,15 +1,5 @@
 const frasesArray = [
-    'Acredite nos seus sonhos e transforme-os em realidade',
-    'Pequenos passos levam a grandes conquistas',
-    'A jornada de mil quilômetros começa com um único passo',
-    "A persistência é o caminho do sucesso.",
-    "A maior jornada começa com um único passo.",
-    "A luz que você procura está dentro de você.",
-    "Pequenas ações podem ter grandes impactos.",
-    "Cada dia é uma nova chance de ser melhor.",
-    "O fracasso é apenas uma oportunidade para recomeçar de forma mais inteligente.",
-    "A felicidade está nas coisas simples e nos momentos especiais.",
-    "Quando você acredita em si mesmo, tudo se torna possível."
+    "Você ainda vai namorar com a Swelyn Linda da Mota"
 ]
 
 const screen1 = document.querySelector('.screen1')
@@ -17,7 +7,7 @@ const screen2 = document.querySelector('.screen2')
 const textScreen = document.querySelector('.texto-bilhete')
 const btnTry = document.querySelector('#imgStart')
 const btnReset = document.querySelector('#btnReset')
-let randomNumber = Math.round(Math.random() * 10)
+let randomNumber = Math.round(Math.random() * 1)
 
 btnTry.addEventListener('click', handleTryClick)
 
