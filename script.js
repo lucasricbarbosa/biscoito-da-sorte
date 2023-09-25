@@ -1,12 +1,15 @@
 const frasesArray = [
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
-    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    'Acredite nos seus sonhos e transforme-os em realidade',
+    'Pequenos passos levam a grandes conquistas',
+    'A jornada de mil quilômetros começa com um único passo',
+    "A persistência é o caminho do sucesso.",
+    "A maior jornada começa com um único passo.",
+    "A luz que você procura está dentro de você.",
+    "Pequenas ações podem ter grandes impactos.",
+    "Cada dia é uma nova chance de ser melhor.",
+    "O fracasso é apenas uma oportunidade para recomeçar de forma mais inteligente.",
+    "A felicidade está nas coisas simples e nos momentos especiais.",
+    "Quando você acredita em si mesmo, tudo se torna possível."
 ]
 
 const screen1 = document.querySelector('.screen1')
