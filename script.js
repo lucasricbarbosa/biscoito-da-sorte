@@ -1,5 +1,12 @@
 const frasesArray = [
-    "Você ainda vai namorar com a Swelyn Linda da Mota"
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
+    "Você ainda vai namorar com a Swelyn Linda da Mota",
 ]
 
 const screen1 = document.querySelector('.screen1')
@@ -7,7 +14,7 @@ const screen2 = document.querySelector('.screen2')
 const textScreen = document.querySelector('.texto-bilhete')
 const btnTry = document.querySelector('#imgStart')
 const btnReset = document.querySelector('#btnReset')
-let randomNumber = Math.round(Math.random() * 1)
+let randomNumber = Math.round(Math.random() * 10)
 
 btnTry.addEventListener('click', handleTryClick)
 
